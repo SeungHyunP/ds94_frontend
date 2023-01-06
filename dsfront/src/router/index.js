@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 
-import TotalSearch from '../views/TotalSearch.vue';
+// import TotalSearch from '../views/TotalSearch.vue';
+import Login from '../views/Login.vue';
 
 
 // 라우터 목록
 const routes = [
 
-    { path: '/', component:TotalSearch},
+    { path: '/', component:Login},
 
 ]
 
