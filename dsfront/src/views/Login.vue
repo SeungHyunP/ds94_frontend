@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div>
-        <h1 style="margin-bottom: 3rem">Generate more leads with a professional landing page!</h1>
+        <h1 style="margin-bottom: 3rem">Welcom this page!</h1>
         <b-container fluid="sm" style="max-width: fit-content;">
             <b-card>
                 <b-form>
@@ -16,8 +16,7 @@
                         </b-col>
                     </b-row>
                 </b-form>
-                <b-button block variant="primary">Login</b-button>
-            
+                <b-button block variant="primary" @click="loginSubmit">Login</b-button>
             </b-card>
         </b-container>
     </div>
@@ -32,7 +31,17 @@ export default {
         return {
 
         }
-    }
+    },
+
+    methods: {
+        loginSubmit() {
+
+            // TDOO :: 로그인 토큰 추가
+
+            this.$router.push("/Home");
+
+        }
+    },
 }
 
 </script>
