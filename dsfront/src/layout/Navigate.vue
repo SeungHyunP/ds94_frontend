@@ -6,13 +6,13 @@
                 <b-navbar-brand>DS</b-navbar-brand>
 
                 <b-navbar-nav>
-                    <b-nav-item to="/AttackResearch">Attack</b-nav-item>
+                    <b-nav-item to="/Research/AttackResearch">Attack</b-nav-item>
                     <!-- <b-nav-item herf="#">Attack</b-nav-item> -->
-                    <b-nav-item href="#">Defence</b-nav-item>
-                    <b-nav-item href="#">Board</b-nav-item>
+                    <b-nav-item to="/Research/DefenseResearch">Defence</b-nav-item>
+                    <b-nav-item to="/Research/Board">Board</b-nav-item>
                     <b-nav-item-dropdown text="Inform" right>
-                        <b-dropdown-item to="/Inform/User">User</b-dropdown-item>
-                        <b-dropdown-item to="/Inform/Monster">Monster</b-dropdown-item>
+                        <b-dropdown-item to="/Research/User">User</b-dropdown-item>
+                        <b-dropdown-item to="/Research/Monster">Monster</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
 
