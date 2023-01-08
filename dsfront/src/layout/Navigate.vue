@@ -2,7 +2,7 @@
 <template>
     <div>
         <!-- <b-nav> -->
-            <b-navbar toggleable="lg" variant="primary">
+            <b-navbar style="background-color: darkgrey" >
                 <b-navbar-brand>DS</b-navbar-brand>
 
                 <b-navbar-nav>
