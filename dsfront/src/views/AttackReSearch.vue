@@ -1,7 +1,7 @@
 <template>
   <h1>Attack Research</h1>
 
-  <b-row>
+  <b-row style="display:inline-flex;">
     <b-col>
       <MonsterCard></MonsterCard>
     </b-col>

@@ -8,7 +8,7 @@
                 <b-navbar-nav>
                     <b-nav-item to="/Research/AttackResearch">Attack</b-nav-item>
                     <!-- <b-nav-item herf="#">Attack</b-nav-item> -->
-                    <b-nav-item to="/Research/DefenseResearch">Defence</b-nav-item>
+                    <b-nav-item to="/Research/DefenseResearch">Defense</b-nav-item>
                     <b-nav-item to="/Research/Board">Board</b-nav-item>
                     <b-nav-item-dropdown text="Inform" right>
                         <b-dropdown-item to="/Research/User">User</b-dropdown-item>
