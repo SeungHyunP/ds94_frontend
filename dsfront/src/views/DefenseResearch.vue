@@ -1,5 +1,5 @@
 <template>
-    <h1>방덱 생성기</h1>
+    <h1>Defense Producing</h1>
     
     <!-- Search Filter -->
     <b-container>

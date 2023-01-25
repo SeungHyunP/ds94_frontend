@@ -9,6 +9,7 @@ import DefenseResearch  from '../views/DefenseResearch.vue';
 import Board            from '../views/board/Free.vue';
 import InformUser       from '../views/InformUser.vue';
 import InformMonster    from '../views/InformMonster.vue';
+import OffenseEditor    from '../views/OffenseEditor.vue';
 
 import ResearchLayout   from '../layout/Research/ResearchLayout.vue'
 
@@ -41,6 +42,10 @@ const routes = [
             {
                 path: "Monster",
                 component: InformMonster
+            },
+            {
+                path: "OffenseEditor",
+                component: OffenseEditor
             },
         ],
     },
