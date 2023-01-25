@@ -70,6 +70,12 @@ export default {
                 rowHeights: 35,
                 rowHeaders: true,
                 columnHeaderHeight : 35,
+                afterGetRowHeader: (col, TH) => {
+                    TH.className = 'htCenter htMiddle'
+                },
+                afterGetColHeader: (col, TH) => {
+                    TH.className = 'htCenter htMiddle'
+                },
                 columns: [
                     {
                         // column 1
@@ -145,6 +151,12 @@ export default {
                 rowHeights: 35,
                 rowHeaders: true,
                 columnHeaderHeight : 35,
+                afterGetRowHeader: (col, TH) => {
+                    TH.className = 'htCenter htMiddle'
+                },
+                afterGetColHeader: (col, TH) => {
+                    TH.className = 'htCenter htMiddle'
+                },
                 columns: [
                     {
                         // column 1
