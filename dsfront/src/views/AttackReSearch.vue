@@ -26,7 +26,7 @@
         <div style="width:100%; margin-top: 20px; margin-bottom: 10px; display:inline-flex; justify-content: space-between; align-items: center;">
             <h5>게시글</h5> 
             <b-buttongroup>
-                <b-button size="sm" variant="light"  v-b-tooltip.hover title="글쓰기" @click="CreateClickEvent">
+                <b-button size="sm" variant="success"  v-b-tooltip.hover title="글쓰기" @click="CreateClickEvent">
                   <font-awesome-icon icon="fa-solid fa-pen-to-square" />
                 </b-button>
             </b-buttongroup>

@@ -19,7 +19,7 @@ import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fort
 
 /* import specific icons */
 import { faUserSecret, faMagnifyingGlass, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
-// import { faUserSecret } from '@fortawesome/free-regular-svg-icons'
+import { faLightbulb  } from '@fortawesome/free-regular-svg-icons'
 // import { faUserSecret } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -42,6 +42,7 @@ registerPlugin(UndoRedo);
 library.add(faUserSecret);
 library.add(faMagnifyingGlass);     // 검색 아이콘
 library.add(faPenToSquare);         // 글쓰기 아이콘
+library.add(faLightbulb);           // 전구 아이콘
 
 const app = createApp(App);
 
