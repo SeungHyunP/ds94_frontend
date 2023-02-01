@@ -18,9 +18,9 @@ import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fort
 
 
 /* import specific icons */
-import { faUserSecret, faMagnifyingGlass, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faUserSecret, faMagnifyingGlass, faPenToSquare, faEnvelope, faList } from '@fortawesome/free-solid-svg-icons';
 import { faLightbulb  } from '@fortawesome/free-regular-svg-icons'
-// import { faUserSecret } from '@fortawesome/free-brands-svg-icons'
+import { faBlogger } from '@fortawesome/free-brands-svg-icons'
 
 
 /** Grid Library : Handsontable */
@@ -43,6 +43,11 @@ library.add(faUserSecret);
 library.add(faMagnifyingGlass);     // 검색 아이콘
 library.add(faPenToSquare);         // 글쓰기 아이콘
 library.add(faLightbulb);           // 전구 아이콘
+library.add(faList);                // 리스트 아이콘
+
+
+library.add(faEnvelope);            // 메일 아이콘
+library.add(faBlogger);             // 블로그 아이콘
 
 const app = createApp(App);
 

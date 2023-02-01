@@ -1,38 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <b-container fluid>
+    <b-container fluid style="background-color: darkgrey">
         <footer>
-
-            <!-- <section id="contact" class="section">
+            <section id="contact" class="section">
                 <h1 class="contact__title">Let's Talk</h1>
-
-                <b-link href="https://itteamb.blogspot.com">
-                    itteamb.blogspot.com
-                </b-link>
-
                 <div class="contact__link__container">
                     <div class="contact__links">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>hyunee721@gmail.com</span>
+                        <font-awesome-icon icon="fa-solid fa-envelope"/>
+                        <span> hyunee721@gmail.com</span>
                     </div>
                     <div class="contact__links">
-                        <a href="https://itteamb.blogspot.com/">
-                            <i class="fa-brands fa-blogger "></i>
-                            <span>itteamb.blogspot.com</span>
-                        </a>
-                    </div>
-                    <div class="contact__links">
-                        <a href="https://github.com/hyun0721">
-                            <i class="fa-brands fa-square-github "></i>
-                            <span>github.com/hyun0721</span>
-                        </a>
+                        <font-awesome-icon icon="fa-brands fa-blogger"/>
+                        <span> itteamb.blogspot.com</span>
                     </div>
                 </div>
 
                 <p class="contact__rights">
                     2023 D.S. - All rights reserved
                 </p>
-            </section> -->
+            </section>
         </footer>
     </b-container>
 </template>

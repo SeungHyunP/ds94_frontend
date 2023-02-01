@@ -6,7 +6,7 @@
                 <MonsterCard></MonsterCard>
             </b-col>
             <b-col cols="8">
-                <b-form-textarea style="height:100%"></b-form-textarea>
+                <b-form-textarea placeholder="룬, 아티펙트 설정방법" style="height:100%"></b-form-textarea>
             </b-col>
         </b-row>
         <b-row class="custom__row" >
@@ -14,7 +14,7 @@
                 <MonsterCard></MonsterCard>
             </b-col>
             <b-col cols="8">
-                <b-form-textarea style="height:100%"></b-form-textarea>
+                <b-form-textarea placeholder="룬, 아티펙트 설정방법" style="height:100%"></b-form-textarea>
             </b-col>
         </b-row>
         <b-row class="custom__row" >
@@ -22,12 +22,12 @@
                 <MonsterCard></MonsterCard>
             </b-col>
             <b-col cols="8">
-                <b-form-textarea style="height:100%"></b-form-textarea>
+                <b-form-textarea placeholder="룬, 아티펙트 설정방법" style="height:100%"></b-form-textarea>
             </b-col>
         </b-row>
         <b-row>
             <h5 style="text-align:left"><font-awesome-icon icon="fa-regular fa-lightbulb"/> 운영법</h5>
-            <b-form-textarea style="height:100%"></b-form-textarea>
+            <b-form-textarea placeholder="운영방법" style="height:100%"></b-form-textarea>
         </b-row>
     </b-container>
 </template>
