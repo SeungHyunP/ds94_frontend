@@ -10,10 +10,10 @@
         :img-src="require('@/assets/image/sample.png')"
         img-alt="Image"
         class="mb-2"
-        style="max-width: 15rem;"
+        style="max-width: 210px;"
     >
 
-    <b-input-group prepend="이름" class="mt-3">
+    <b-input-group prepend="이름">
         <b-form-input size="sm" placeholder="Name"></b-form-input>
         <b-button size="sm" type="submit">
             <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
