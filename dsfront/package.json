@@ -17,10 +17,11 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "bootstrap-vue": "^2.23.1",
     "bootstrap-vue-3": "^0.5.1",
     "core-js": "^3.8.3",
     "handsontable": "^12.3.0",
-    "vue": "^3.2.13"
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

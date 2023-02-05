@@ -1,23 +1,20 @@
+import { router } from './router/index.js'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import { router } from './router/index.js'
-
-
+/** Boot Starp */
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import BootstrapVue3 from 'bootstrap-vue-3'
+// import BootstrapVueIcons from 'bootstrap-vue-3'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 
-// import BootstrapVueIcons from 'bootstrap-vue-3'
 
-/* import the fontawesome core */
+/* The fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
-
-/* import font awesome icon component */
+/* font awesome icon component */
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
-
-
-/* import specific icons */
+/* specific icons */
 import { faUserSecret, faMagnifyingGlass, faPenToSquare, faEnvelope, faList, faStamp } from '@fortawesome/free-solid-svg-icons';
 import { faLightbulb, faCircleCheck  } from '@fortawesome/free-regular-svg-icons'
 import { faBlogger } from '@fortawesome/free-brands-svg-icons'
@@ -28,7 +25,6 @@ import 'handsontable/dist/handsontable.full.css';
 import { registerAllModules }   from 'handsontable/registry';
 import { registerCellType, NumericCellType, DateCellType }     from 'handsontable/cellTypes';
 import { registerPlugin, UndoRedo } from 'handsontable/plugins';
-
 
 
 /** Hansonetable */
@@ -55,6 +51,8 @@ const app = createApp(App);
 
 app.use(router);
 app.use(BootstrapVue3);
+// app.use(BootstrapVue);
+// app.use(IconsPlugin);
 
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('font-awesome-layers', FontAwesomeLayers)

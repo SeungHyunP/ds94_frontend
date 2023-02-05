@@ -11,8 +11,10 @@ export default {
   // components: {
   //   HelloWorld
   // }
+  compatConfig: { MODE:3  }
 
 }
+
 </script>
 
 <style>
