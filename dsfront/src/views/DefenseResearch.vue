@@ -1,6 +1,4 @@
 <template>
-    <h1>Defense Producing</h1>
-    
     <!-- Search Filter -->
     <b-container>
         <b-card>

@@ -1,6 +1,4 @@
 <template>
-  <h1>Attack Research</h1>
-
   <!-- Search Filter -->
   <b-container>
     <b-card>
@@ -37,6 +35,7 @@
                   :items="items" 
                   :fields="fields" 
                   :busy="isBusy" 
+                  style="background-color: #fff;"
                   >
         </b-table>
     </b-container>
@@ -70,15 +69,15 @@ export default {
         isBusy: false,
 
         fields: [
-            {  key: 'SEQ'          ,    label: '순번'      , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'REG_NO'       ,    label: '작성자'    , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'MST_1'        ,    label: '몬스터1'   , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'MST_2'        ,    label: '몬스터2'   , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'MST_3'        ,    label: '몬스터3'   , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'SIGN_YN'      ,    label: '인증여부'  , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'SIGN_DT'      ,    label: '인증일자'  , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'REG_DT'       ,    label: '작성일자'  , thStyle: { background: '#e9ecef', color: '#495057' }  },
-            {  key: 'COMMNET_CNT'  ,    label: '댓글'      , thStyle: { background: '#e9ecef', color: '#495057' }  },
+            {  key: 'SEQ'          ,    label: '순번'      , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'REG_NO'       ,    label: '작성자'    , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'MST_1'        ,    label: '몬스터1'   , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'MST_2'        ,    label: '몬스터2'   , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'MST_3'        ,    label: '몬스터3'   , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'SIGN_YN'      ,    label: '인증여부'  , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'SIGN_DT'      ,    label: '인증일자'  , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'REG_DT'       ,    label: '작성일자'  , thStyle: { background: '#AEBDCA', color: '#495057' }  },
+            {  key: 'COMMNET_CNT'  ,    label: '댓글'      , thStyle: { background: '#AEBDCA', color: '#495057' }  },
         ],
 
         items: [

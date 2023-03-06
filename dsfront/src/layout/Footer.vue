@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <b-container fluid style="background-color: darkgrey">
+    <b-container fluid style="background-color: #AEBDCA">
         <footer>
             <section id="contact" class="section">
                 <h1 class="contact__title">Let's Talk</h1>

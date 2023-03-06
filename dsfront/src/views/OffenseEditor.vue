@@ -14,6 +14,15 @@
         </div>
     </b-container>
 
+    <!-- Utility Button Group -->
+    <b-containter>
+        <div class="utility__area">
+            <b-button class="utility__btn" variant="primary" >수정</b-button>
+            <b-button class="utility__btn" variant="success" >저장</b-button>
+            <b-button class="utility__btn" variant="danger" >삭제</b-button>
+        </div>
+    </b-containter>
+
     <!-- Editor -->
     <b-container fluid="md">
         <b-row class="custom__row">
@@ -78,6 +87,18 @@ export default {
 
     max-width: 240px;
 
+}
+
+
+.utility__area{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.utility__btn {
+    margin: 5px;
 }
 
 </style>

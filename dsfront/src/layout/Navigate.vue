@@ -2,7 +2,7 @@
 <template>
     <div>
         <!-- <b-nav> -->
-            <b-navbar style="background-color: darkgrey" >
+            <b-navbar style="background-color: #E8DFCA" >
                 <b-navbar-brand>DS</b-navbar-brand>
 
                 <b-navbar-nav>
