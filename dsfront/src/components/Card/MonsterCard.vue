@@ -15,11 +15,11 @@
         </b-input-group>
             
         <b-button-group class="btn__container">
-            <b-button class="attr__btn" pill size="sm" variant="outline-danger">불</b-button>
-            <b-button class="attr__btn" pill size="sm" variant="outline-primary">물</b-button>
-            <b-button class="attr__btn" pill size="sm" variant="outline-info">풍</b-button>
-            <b-button class="attr__btn" pill size="sm" variant="outline-warning">빛</b-button>
-            <b-button class="attr__btn" pill size="sm" variant="outline-dark">암</b-button>
+            <b-button class="attr__btn" v-bind:class="{active: this.PROPERTY_LIST[0]}" @click="ActiveProperty(this.PROPERTY_FIRE)"     pill size="sm" variant="outline-danger">불</b-button>
+            <b-button class="attr__btn" v-bind:class="{active: this.PROPERTY_LIST[1]}" @click="ActiveProperty(this.PROPERTY_WATER)"    pill size="sm" variant="outline-primary">물</b-button>
+            <b-button class="attr__btn" v-bind:class="{active: this.PROPERTY_LIST[2]}" @click="ActiveProperty(this.PROPERTY_WIND)"     pill size="sm" variant="outline-info">풍</b-button>
+            <b-button class="attr__btn" v-bind:class="{active: this.PROPERTY_LIST[3]}" @click="ActiveProperty(this.PROPERTY_BRIGHT)"   pill size="sm" variant="outline-warning">빛</b-button>
+            <b-button class="attr__btn" v-bind:class="{active: this.PROPERTY_LIST[4]}" @click="ActiveProperty(this.PROPERTY_DARK)"     pill size="sm" variant="outline-dark">암</b-button>
         </b-button-group>
 
         </b-card>
@@ -29,6 +29,25 @@
 
 <script>
 export default {
+
+    data() {
+        return {
+            PROPERTY_FIRE    : '0',
+            PROPERTY_WATER   : '1',
+            PROPERTY_WIND    : '2',
+            PROPERTY_BRIGHT  : '3',
+            PROPERTY_DARK    : '4',
+
+            PROPERTY_LIST : [false,false,false,false,false]
+        }
+    },
+
+    methods: {
+        ActiveProperty(category){
+            this.PROPERTY_LIST = [false,false,false,false,false];       // Init
+            this.PROPERTY_LIST[category] = true;
+        }
+    }
 
 }
 </script>
