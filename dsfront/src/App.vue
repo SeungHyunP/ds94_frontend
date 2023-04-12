@@ -11,8 +11,11 @@ export default {
   // components: {
   //   HelloWorld
   // }
-  compatConfig: { MODE:3  }
+  compatConfig: { MODE:3 },
 
+  created: function() {
+    console.log(`Started...`);
+  }
 }
 
 </script>
