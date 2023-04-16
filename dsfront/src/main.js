@@ -12,8 +12,10 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 
 /* The fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
+
 /* font awesome icon component */
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+
 /* specific icons */
 import { faUserSecret, faMagnifyingGlass, faPenToSquare, faEnvelope, faList, faStamp } from '@fortawesome/free-solid-svg-icons';
 import { faLightbulb, faCircleCheck  } from '@fortawesome/free-regular-svg-icons'
@@ -57,4 +59,7 @@ app.use(BootstrapVue3);
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('font-awesome-layers', FontAwesomeLayers)
 app.component('font-awesome-layer-text', FontAwesomeLayersText)
+// app.component('MonsterCard', MonsterCard)
+
+
 app.mount('#app');

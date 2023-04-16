@@ -30,6 +30,8 @@
 <script>
 export default {
 
+    compatConfig: { MODE: 3 },
+    
     data() {
         return {
             PROPERTY_FIRE    : '0',

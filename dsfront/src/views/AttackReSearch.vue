@@ -23,11 +23,15 @@
     <b-container>
         <div style="width:100%; margin-top: 20px; margin-bottom: 10px; display:inline-flex; justify-content: space-between; align-items: center;">
             <h5><font-awesome-icon icon="fa-solid fa-list" /> 게시글</h5> 
-            <b-buttongroup>
-                <b-button size="sm" variant="success"  v-b-tooltip.hover title="글쓰기" @click="CreateClickEvent">
+            <b-button-group>
+                <b-button size="sm" variant="success" v-b-tooltip.hover title="글쓰기" @click="CreateClickEvent">
                   <font-awesome-icon icon="fa-solid fa-pen-to-square" />
                 </b-button>
-            </b-buttongroup>
+
+                <!-- <div class="text-center my-3">
+                  <b-button v-b-tooltip.hover title="Tooltip content">Hover Me</b-button>
+                </div> -->
+            </b-button-group>
         </div>
         <b-table  
                   sticky-header
@@ -47,6 +51,8 @@
 import MonsterCard from '@/components/Card/MonsterCard.vue';
 
 export default {
+
+  compatConfig: { MODE: 3 },
 
   components: {
     MonsterCard
@@ -80,6 +86,7 @@ export default {
             {  key: 'COMMNET_CNT'  ,    label: '댓글'      , thStyle: { background: '#AEBDCA', color: '#495057' }  },
         ],
 
+        /* 데이터 포맷 */
         items: [
           { SEQ : '1',    REG_NO : '김동현',    MST_1   : '풍 라클',    MST_2   : '물 브라',    MST_3   : '불 닭',    SIGN_YN : 'Y',    SIGN_DT : '2023-01-31',    REG_DT : '2023-01-20',    COMMNET_CNT : '5' },
           { SEQ : '2',    REG_NO : '박영서',    MST_1   : '불 스나',    MST_2   : '빛 쿵푸',    MST_3   : '풍 웨폰',    SIGN_YN : 'Y',    SIGN_DT : '2023-01-31',    REG_DT : '2023-01-20',    COMMNET_CNT : '5' },

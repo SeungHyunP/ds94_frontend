@@ -23,9 +23,9 @@
     <b-container>
         <div style="width:100%; margin-top: 20px; margin-bottom: 10px; display:inline-flex; justify-content: space-between; align-items: center;">
             <h5>생성 결과</h5> 
-            <b-buttongroup>
+            <b-button-group>
                 <b-button size="sm" variant="success">확정</b-button>
-            </b-buttongroup>
+            </b-button-group>
         </div>
 
         <hot-table :settings="resultGrid"></hot-table>
