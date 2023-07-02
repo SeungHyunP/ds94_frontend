@@ -40,6 +40,7 @@
                   :fields="fields" 
                   :busy="isBusy" 
                   style="background-color: #fff;"
+                  @row-dbl-clicked="tableDbClickEventCallBack"
                   >
         </b-table>
     </b-container>
@@ -66,6 +67,18 @@ export default {
     SearchClickEvent() {
       this.isBusy = !this.isBusy;
       console.log('Clicked');
+    },
+
+    tableDbClickEventCallBack(item, index, event){
+
+      console.log('item', item);
+      console.log('index', index);
+      console.log('event', event);
+
+      this.$router.push({
+        name:'OffenseEditor',
+        params: { name: "test", monsterCode1: "temp", author: "writer" }
+      });
       
     }
   },
@@ -87,6 +100,9 @@ export default {
         ],
 
         /* 데이터 포맷 */
+
+        // TODO: 몬스터 이름/코드 형태로 모두 받아야 함. 각 행 별 PK값이 있어야함.
+        // 행 더블 클릭 시, 화면전환 되기 때문.
         items: [
           { SEQ : '1',    REG_NO : '김동현',    MST_1   : '풍 라클',    MST_2   : '물 브라',    MST_3   : '불 닭',    SIGN_YN : 'Y',    SIGN_DT : '2023-01-31',    REG_DT : '2023-01-20',    COMMNET_CNT : '5' },
           { SEQ : '2',    REG_NO : '박영서',    MST_1   : '불 스나',    MST_2   : '빛 쿵푸',    MST_3   : '풍 웨폰',    SIGN_YN : 'Y',    SIGN_DT : '2023-01-31',    REG_DT : '2023-01-20',    COMMNET_CNT : '5' },

@@ -18,7 +18,6 @@ const routes = [
     { path: "/", component: Login },
     { path: "/Home", component: Home },
     { path: "/TotalSearch", component: TotalSearch },
-
     {
         path: "/Research",
         component: ResearchLayout,
@@ -45,7 +44,9 @@ const routes = [
             },
             {
                 path: "OffenseEditor",
-                component: OffenseEditor
+                name: "OffenseEditor",
+                component: OffenseEditor,
+                props: true
             },
         ],
     },
